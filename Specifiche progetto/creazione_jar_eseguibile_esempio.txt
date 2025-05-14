@@ -1,0 +1,8 @@
+JAR ESEGUIBILE
+
+javac nome_cartella_sorgenti_progetto\* //compilare
+java nome_package.nome_classe_main //verifico che il progetto funzioni
+
+jar cvfe nome_jar.jar nome_package/*.class //creazione jar
+
+java -jar nome_jar.jar //verifico che il jar funzioni
