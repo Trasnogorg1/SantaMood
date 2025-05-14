@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a5e31f9-06aa-4b7b-a5c4-3cca54094e6a" name="Changes" comment="proviamo cazozzo">
+    <list default="true" id="5a5e31f9-06aa-4b7b-a5c4-3cca54094e6a" name="Changes" comment="proviamo cazozzo121212">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +46,14 @@
       <option name="project" value="LOCAL" />
       <updated>1747227923762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="proviamo cazozzo121212">
+      <created>1747228083804</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747228083804</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -59,6 +69,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="proviamo cazozzo" />
-    <option name="LAST_COMMIT_MESSAGE" value="proviamo cazozzo" />
+    <MESSAGE value="proviamo cazozzo121212" />
+    <option name="LAST_COMMIT_MESSAGE" value="proviamo cazozzo121212" />
   </component>
 </project>
