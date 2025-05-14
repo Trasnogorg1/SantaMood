@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a5e31f9-06aa-4b7b-a5c4-3cca54094e6a" name="Changes" comment="Prima modifica effettiva" />
+    <list default="true" id="5a5e31f9-06aa-4b7b-a5c4-3cca54094e6a" name="Changes" comment="prova post cassssino">
+      <change afterPath="$PROJECT_DIR$/Specifiche progetto/Read.me" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1747229581110</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="prova post cassssino">
+      <created>1747229766000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747229766000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +93,7 @@
     <MESSAGE value="proviamo cazozzo" />
     <MESSAGE value="proviamo cazozzo121212" />
     <MESSAGE value="Prima modifica effettiva" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prima modifica effettiva" />
+    <MESSAGE value="prova post cassssino" />
+    <option name="LAST_COMMIT_MESSAGE" value="prova post cassssino" />
   </component>
 </project>

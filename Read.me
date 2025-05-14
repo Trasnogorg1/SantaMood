@@ -1,0 +1,289 @@
+JAVA 19
+
+
+1. Il progetto deve essere sviluppato in linguaggio Java (versione
+recente) e deve essere multipiattaforma
+2. Il codice deve essere opportunamente commentato in formato
+Javadoc
+3. Il package theknife deve essere definito e deve contenere le
+relative classi (ulteriori package sono ammessi)
+4. Il main per l’esecuzione dell’applicazione deve essere contenuto
+nella classe di nome TheKnife del package theknife
+5. Creare il file eseguibile (.jar) per l’esecuzione dell’applicazione
+6. L’intestazione di tutti i file *.java deve contenere nome, cognome,
+num. matricola, sede (VA o CO) degli autori del progetto
+
+
+---------------------------
+
+Il progetto deve essere consegnato come link a una directory OneDrive
+dell'Università o Google Drive del project manager e al link si dovrà
+trovare una dir compressa denominata con cognome_matricola del
+project manager del team. La cartella compressa dovrà contenere:
+• File autori.txt: file di testo contenente cognome, nome, numero di
+matricola e sede (VA o CO) di ogni membro del team; in caso di
+progetto svolto in gruppo, link al repository GitHub di progetto
+• Directory /src: codice sorgente del progetto
+• Directory /bin: files eseguibili (.jar) dell’applicazione
+• Directory /data: files dati del progetto
+• Directory /doc: manuale utente e manuale tecnico in formato .pdf,
+JavaDoc generata
+• Directory /lib: eventuali librerie esterne per compilazione e esecuzione
+• File README.txt: file di testo con indicazioni precise sull’installazione
+e sulla compilazione
+
+
+
+-------------------------------------
+
+
+trovare ristoranti in tutto il mondo e
+selezionarli in base al luogo,
+alla tipologia del ristorante
+stesso, alla fascia di prezzo,
+alla possibilità o meno di
+prenotare un tavolo o di
+ordinare da asporto.
+
+
+Ai ristoratori
+• di creare i propri ristoranti, definirne le loro caratteristiche, visualizzarne le
+recensioni e rispondere ad esse
+
+Agli utenti
+• di cercare ristoranti in base alla caratteristiche desiderate, inserire, modificare e
+cancellare le recensioni
+
+
+
+FILE DATI RISTORANTE
+Prima di progettare l'applicazione è necessario costruire un file dove
+memorizzare i dati dei ristoranti coperti dal servizio, che deve contenere almeno
+i seguenti campi:
+• Nome del ristorante
+• Informazioni sul luogo in cui si trova il ristorante, in particolare:
+• Nazione
+• Città
+• Indirizzo
+• Latitudine
+• Longitudine
+• Fascia di prezzo (prezzo medio in euro)
+• Disponibilità del servizio di delivery (si/no)
+• Disponibilità del servizio di prenotazione online (si/no)
+• Tipo di cucina
+
+
+
+FILE UTENTI
+Prima di progettare l'applicazione è necessario costruire anche un file
+denominato Utenti, che dovrà predisporre almeno le seguenti informazioni:
+• Nome
+• Cognome
+• Username
+• Password (cifrata)
+• Data di nascita (facoltativa)
+• Luogo del domicilio
+• Ruolo (cliente/ristoratore)
+
+-------------------------------------------
+
+METODI PRINCIPALI
+Funzionalità principali dell’applicazione:
+
+Utenti non registrati
+• Visualizzare i dettagli dei ristoranti (luogo, fascia di prezzo, servizi)
+• Visualizzare le recensioni dei ristoranti in forma anonima
+• Registrarsi all’applicazione come cliente o gestore dei ristoranti
+
+Utenti (clienti dei ristoranti) registrati
+• Definire e visualizzare una lista di ristoranti preferiti
+• Inserire le proprie recensioni per un ristorante (una recensione è composta
+da un numero di stelle che va da 1 a 5 e da un testo)
+• Modificare e cancellare le proprie recensioni per un ristorante
+
+Utenti (ristoratori) registrati
+• Inserire un nuovo ristorante
+• Visualizzare le recensioni relative ai propri ristoranti e rispondere alle
+recensioni (al massimo una risposta per ogni recensione)
+• Visualizzare la valutazione media dei propri ristoranti e il numero di
+recensioni ricevute
+
+
+METODI SPECIFICO
+
+Dettaglio delle funzionalità principali dell’applicazione:
+
+• Consultazione delle informazioni di ogni ristorante (login non necessario):
+ A. Funzionalità di ricerca cercaRistorante()
+• Per tipologia di cucina
+• Per locazione geografica (dato obbligatorio per ogni metodo di ricerca)
+• Per fascia di prezzo (es. “minore di 30€”, “tra 20€ e 50€”)
+• In base alla disponibilità del servizio di delivery
+• In base alla disponibilità del servizio di prenotazione online
+• Per media del numero di stelle
+• Una combinazione dei precedenti criteri di ricerca
+
+
+ B.Funzionalità di selezione (da effettuarsi dopo la ricerca) e visualizzazione
+
+visualizzaRistorante() e visualizzaRecensioni()
+• Visualizzazione delle caratteristiche del ristorante (locazione geografica,
+fascia di prezzo, tipologia di cucina, servizi)
+• Visualizzazione delle recensioni e delle stelle attribuite (con numero di
+recensioni presenti e media delle stelle attribuite da tutti gli utenti che
+hanno fornito una recensione)
+
+Registrazione alla piattaforma (login non necessario):
+a. Funzionalità di registrazione di un nuovo utente registrazione() (deve
+permettere di inserire tutti i dati di un utente e il tipo di utente registrato)
+
+
+Interazione con la piattaforma da parte dei clienti (login necessario):
+a. Funzionalità di aggiunta di un ristorante alla lista dei preferiti
+aggiungiPreferito()
+b. Funzionalità di eliminazione di un ristorante dalla lista dei preferiti
+rimuoviPreferito()
+c. Funzionalità di visualizzazione dei ristoranti presenti nella lista dei preferiti
+visualizzaPreferiti()
+d. Funzionalità di aggiunta di una recensione (testo e numero di stelle) per un
+ristorante aggiungiRecensione()
+e. Funzionalità di modifica di una recensione inserita in precedenza per un
+ristorante modificaRecensione()
+f. Funzionalità di cancellazione di una recensione inserita in precedenza per
+un ristorante eliminaRecensione()
+
+
+Interazione con la piattaforma da parte dei ristoratori (login necessario):
+a. Funzionalità di aggiunta di un ristorante aggiungiRistorante()
+b. Funzionalità di visualizzazione del riepilogo delle recensioni
+visualizzaRiepilogo() (con media delle stelle e numero delle recensioni)
+c. Funzionalità di visualizzazione delle recensioni dei propri ristoranti
+visualizzaRecensioni(), con il dettaglio delle stelle associate ad ognuna
+d. Funzionalità di risposta alle recensioni dei propri ristoranti
+rispostaRecensioni() (al massimo una risposta per ogni recensione)
+
+
+----------------------------------------
+
+
+MENU INIZIALE
+
+MAPPAAAAAAA
+
+
+All’avvio l’applicazione mostra un menu iniziale in cui è possibile loggarsi o
+registrarsi alla piattaforma.
+In alternativa, è possibile proseguire come utente ‘guest’ indicando solo il nome di
+un luogo ed accedere alla funzionalità che non richiedono di essere autenticati
+presso il sistema.
+L’applicazione deve almeno consentire di:
+
+• visualizzare un elenco dei ristoranti vicini al luogo indicato dall’utente
+‘guest’ o al domicilio in caso di utente loggato
+• cercare i ristoranti
+• visualizzare i ristoranti selezionati come preferiti (cliente)
+• visualizzare i ristoranti per i quali è stata inserita una recensione, e le
+recensioni stesse (cliente)
+• visualizzare i ristoranti che inseriti e la loro valutazione media (ristoratore)
+• visualizzare e rispondere alle recensioni relative ai ristoranti inseriti (ristoratore)
+
+
+
+• File e strutture dati:
+▪ Ristoranti
+▪ Utenti (clienti e ristoratori)
+• Cosa e come memorizzare su file
+(formato testuale vs. serializzazione oggetti)
+• Interfaccia utente
+(terminale vs. interfaccia grafica)
+N.B. Non è necessario preoccuparsi di accesso concorrente ai dati e di architetture
+distribuite client/server (farà parte del LabB)
+
+
+
+
+
+
+-----------
+
+CONSEGNA SPECIFICHE (FINE)
+
+1. Sviluppo della Soluzione Software
+2. Documentazione di Progetto (2 documenti distinti)*
+a) Manuale Utente
+b) Manuale Tecnico
+* Ulteriori informazioni su come scrivere la documentazione le vedremo la prossima lezione
+
+
+
+La consegna avviene tramite form online reso disponibile sulla
+piattaforma E-learning
+(Verranno richiesti: link al file del progetto, dati dei componenti del gruppo,
+GitHub del gruppo)
+• Responsabile della consegna sarà il Project Manager (identificato
+tramite email istituzionale di ateneo)
+• L’apertura del form e la data di consegna verranno comunicate per
+ogni appello tramite annuncio sulla piattaforma E-learning
+• (La consegna del progetto è prevista indicativamente 10 giorni prima
+della data di appello d’esame)
+In fase di discussione orale verrà:
+• richiesto allo studente di saper argomentare in modo opportuno le
+scelte progettuali, algoritmiche, e implementative adottate
+• verificata l'effettiva padronanza delle tecniche utilizzate attraverso
+una serie di domande
+
+
+Valutazione
+
+• Nella valutazione verranno considerati questi aspetti:
+• Applicazione sviluppata:
+• Aderenza delle funzionalità implementate ai requisiti
+• Controllo degli errori e gestione delle eccezioni
+• Manipolazione dataset e gestione dei files CSV
+• Navigabilità dei menu (testuale o GUI)
+• Struttura e completezza della consegna
+• Documentazione:
+• Struttura e completezza dei manuali
+• Linguaggio adatto per manuale tecnico e utente
+• Manuale utente: descrizione funzionalità (con screenshot)
+• Manuale tecnico: scelte architetturali, algoritmiche e strutture dati
+• Documentazione JavaDoc
+
+
+Per ogni dubbio sulle specifiche che non sia chiarito durante la lezione
+di presentazione del progetto, è possibile scrivere sul forum dedicato nella
+pagina del corso.
+Il forum si chiama "Specifiche progetto Lab A"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
